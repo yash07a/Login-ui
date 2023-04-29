@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+.container{
+  border: 1px solid grey;
+  margin: -1% 25%; 
+  padding: 3%;
+  border-radius: 0.5cm;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mb-3{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.mb-3 i{
+  position: absolute;
+  right:29%;
+  top: 16px;
+  padding: 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.row .col1 i {
+  position: absolute;
+  left: 22%;
+  top: 23px;
+  padding: 10px 10px;
+}
+
+.row .col2 i {
+  position: absolute;
+  left: 62%;
+  top: 23px;
+  padding: 10px 10px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+}
+
+.form-control{
+  width: 70%;
+  height: 30%;
+  border-radius: 0.1cm;
+}
+
+.form-text{
+  font-size: small;
+}
+.form-label{
+  font-size:small;
+  font-weight: bold;
+}
+
+.form-check-label{
+  font-weight: bold;
+}
+.btn{
+  background-color: blue;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size:75%;
+  border-radius: 0.2cm;
+  width: 15%;
+  margin: 0.5% 57%;
+}
+
+.cont{
+  padding: 5px;
+  text-align: center;
+  font-size: 75%;
+  border-radius: 0.2cm;
+  width: 15%;
+  margin: 1% 57%;
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -5%;
+}
+
+.icons i{
+  margin: auto;
+  padding: 1% 35%
+}
+
+@media only screen and (max-width: 500px){
+  container {
+    display: flex;
+    flex-direction: column
   }
 }
+
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/info.css');
+
+ .gg-info {
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   transform: scale(var(--ggs, 1));
+   width: 20px;
+   height: 20px;
+   border: 2px solid;
+   border-radius: 40px
+ }
+
+ .gg-info::after,
+ .gg-info::before {
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 3px;
+   width: 2px;
+   background: currentColor;
+   left: 7px
+ }
+
+ .gg-info::after {
+   bottom: 2px;
+   height: 8px
+ }
+
+ .gg-info::before {
+   height: 2px;
+   top: 2px
+ }
