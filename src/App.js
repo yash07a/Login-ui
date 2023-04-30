@@ -29,7 +29,7 @@ function App() {
       <button onClick={(e) => toggleTheme(e)} style={myStyle} className='batan'>{myStyle.color === 'black' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}</button>
     </div>
     <form className='container' style={myStyle}>
-      <div className='icons' style={myStyle}>
+      <div className='icons'>
         <div >
           <i className="fas fa-lock"></i>
           <h5>Account</h5>
@@ -49,13 +49,13 @@ function App() {
       </div>
       <div className="mb-3" style={myStyle}>
         <label htmlFor="examplename" className="form-label">Name</label>
-        <i className="gg-info"></i>
+        <i class="fa fa-info-circle"></i>
         <input type="text" className="form-control" id="examplename" aria-describedby="nameHelp" />
       </div>
       <br />
       <div className="mb-3" style={myStyle}>
         <label htmlFor="exampleInputEmail1" className="form-label">Email*</label>
-        <i className="gg-info"></i>
+        <i class="fa fa-info-circle"></i>
         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
         <div id="emailHelp" className="form-text">Please input a real email address.</div>
       </div>
@@ -63,13 +63,13 @@ function App() {
       <div className="row" style={myStyle}>
         <div className="col1">
           <label htmlFor="examplepassword" className="form-label">Password*</label>
-          <i className="gg-info"></i>
+            <i class="fa fa-info-circle"></i>
           <input type="password" className="form-control" aria-label="First name" />
           <div id="emailHelp" className="form-text">Please enter your Password.</div>
         </div>
         <div className="col2" style={myStyle}>
           <label htmlFor="examplepassword1" className="form-label">Confirm Password*</label>
-          <i className="gg-info"></i>
+            <i class="fa fa-info-circle"></i>
           <input type="password" className="form-control" aria-label="Last name" />
           <div id="emailHelp" className="form-text">Passwords need to match</div>
         </div>

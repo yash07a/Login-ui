@@ -62,13 +62,11 @@
 }
 .btn{
   background-color: blue;
-  border: none;
   padding: 15px;
   text-align: center;
-  text-decoration: none;
   font-size:75%;
   border-radius: 0.2cm;
-  width: 15%;
+  width: 25%;
   margin: 0.5% 57%;
 }
 
@@ -93,14 +91,19 @@
   padding: 1% 35%
 }
 
-@media only screen and (max-width: 500px){
-  container {
+@media only screen and (max-width: 600px){
+  .row {
     display: flex;
     flex-direction: column
   }
 }
 
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/info.css');
+.fa-info-circle{
+  margin: -1%;
+  color: brown;
+}
+
+/*@import url('https://unpkg.com/css.gg@2.0.0/icons/css/info.css');
 
  .gg-info {
    box-sizing: border-box;
@@ -133,4 +136,4 @@
  .gg-info::before {
    height: 2px;
    top: 2px
- }
+ }*/
